@@ -36,6 +36,42 @@
     max-width: 100%;
 }
 
+/**
+Shrink menu when scroll
+**/
+
+
+section {
+    height:calc(90% - 50px);
+}
+
+.affix {
+    padding:0px;
+    -webkit-transition:padding 0.2s linear;
+    -moz-transition:padding 0.2s linear;
+    -o-transition:padding 0.2s linear;
+    transition:padding 0.2s linear;
+
+}
+
+.affix-top {
+    padding-top:15px;
+    padding-bottom:15px;
+    -webkit-transition:padding 0.5s linear;
+    -moz-transition:padding 0.5s linear;
+    -o-transition:padding 0.5s linear;
+    transition:padding 0.5s linear;
+}
+
+.navbar-brand{
+    padding:0px;
+}
+
+section.content>div.featured{
+    padding:7px;
+}
+
+
 article img {
     width: 100%;
     height: 100%;
