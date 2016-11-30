@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Darktips.com minimalist theme</title>
+</head>
+
+<body>
+
+<style>
+    div section {
+        border: 1px solid red;
+    }
+
+    article.primary img, article.secondary img {
+        padding-top: 15px;
+    }
+
+    article.primary {
+        height: 100%;
+    }
+
+    article.secondary {
+        height: 50%;
+    }
+
+    div.pagebreak {
+        text-align: center;
+        position: relative;
+        margin: 25px auto;
+        width: calc(100% - 100px);
+    }
+
+    div.pagebreak::before {
+        border: 1px solid #DEDEDE;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+    }
+
+    div.pagebreak span {
+        background-color: #ffffff;
+        padding: 5px 10px;
+        position: relative;
+        font-size: 22px;
+    }
+
+
+</style>
+<div class="container content">
+    <div class="row">
+        <main>
+            <section class="col-md-8 row-no-right-padding">
+                <article class="primary">
+                    <a href="#"><img class="img-responsive" src="/img/1.jpg"></a>
+                </article>
+            </section>
+            <section class="col-md-4">
+                <article class="secondary">
+                    <a href="#"><img class="img-responsive" src="/img/2.jpg"></a>
+                </article>
+                <article class="secondary">
+                    <a href="#"><img class="img-responsive" src="/img/3.jpg"></a>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <div class="pagebreak">
+        <span>Latest Articles</span>
+    </div>
+
+    <main>
+        <div class="row">
+
+            <section class="col-md-4">
+                <article>
+                    <a href="#"><img class="img-responsive" src="/img/1.jpg"></a>
+                </article>
+            </section>
+            <section class="col-md-4">
+                <article>
+                    <a href="#"><img class="img-responsive" src="/img/2.jpg"></a>
+                </article>
+            </section>
+            <section class="col-md-4">
+                <article>
+                    <a href="#"><img class="img-responsive" src="/img/3.jpg"></a>
+                </article>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+    </footer>
+</div>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/app.css">
+</body>
+</html>
