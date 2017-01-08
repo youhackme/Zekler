@@ -1,0 +1,58 @@
+div.intro-block {
+  h1 {
+    font-weight: 300;
+    font-size: 45px;
+  }
+  &__description {
+    margin-bottom: 40px;
+  }
+  &__description p {
+    font-weight: 300;
+    font-size: 18px;
+  }
+}
+
+section.articles-block {
+
+  &__tip {
+    margin-bottom: 20px;
+  }
+
+  &__tip h4 {
+    font-style: normal;
+    font-weight: 300;
+    width: 80%;
+  }
+  &__tip h4 a {
+    color: #000000;
+  }
+
+  &__tip footer.meta {
+
+    color: #666666;
+    font-size: 13px;
+  }
+
+  &__tip footer.meta div {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  &__tip footer.meta div {
+    display: inline-block;
+
+  }
+  &__tip footer.meta span.glyphicon {
+    margin-right: 2px;
+    font-size: 12px;
+  }
+
+  &author h4 {
+    font-style: normal;
+    font-weight: 100;
+  }
+}
+
+div.load-more__block {
+  margin-bottom: 20px;
+}
