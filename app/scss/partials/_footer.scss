@@ -1,0 +1,13 @@
+footer.footer__block {
+
+  background: #2E3234;
+  height: 100px;
+
+  & p {
+    padding-top: 20px;
+  }
+
+  a {
+    color: #cacaca;
+  }
+}
