@@ -60,26 +60,154 @@ body {
   background-color: #fff;
   font-weight: 100;
   font-style: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
   &:hover {
     text-decoration: none;
   }
-
 }
-
 
 //Blog post page
 
-main.article__block{
-  font-family: "DiariaPro",Helvetica, Arial, sans-serif;
-  font-size:19px;
+article.article__block {
+  font-family: "DiariaPro", Helvetica, Arial, sans-serif;
+  font-size: 19px;
   font-weight: 300;
   font-style: normal;
+  padding: 10px 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
 
+h1 {
+  font-size: 40px;
+}
 
+h4 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+.meta-block {
+  font-family: "ProximaNova", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 14px;
+  &__author-name {
+    font-size: 15px;
+    line-height: 1;
+    color: #000000;
+  }
+}
+
+article.article__block {
+  p {
+    font-family: "DiariaPro", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: normal;
+    line-height: 33px;
+  }
+
+  figure {
+    display: inline-block;
+    margin: 20px;
+  }
+  figure img {
+    vertical-align: top;
+  }
+  figure figcaption {
+    text-align: center;
+    font-family: "ProximaNova", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  figure + p {
+    margin-top: 28px;
+  }
+
+  p + .list, h1 + .list, h2 + .list, h3 + .list, h4 + .list, h5 + .list, h6 + .list {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
+    margin-top: 29px;
+  }
+
+  h1 + .list, h2 + .list, h3 + .list, h4 + .list, h5 + .list, h6 + .list {
+    margin-top: 10px;
+  }
+
+  .list li {
+    margin-bottom: 14px;
+    margin-left: 20px;
+  }
+
+  .list + h4, p + h4 {
+    margin-top: 30px;
+  }
+
+  .list + h3, p + h3 {
+    margin-top: 46px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+}
+
+.tags__block {
+  a {
+    color: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .05);
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px 10px;
+  }
+
+  a:hover {
+    background: rgba(0, 0, 0, .1);
+    color: rgba(0, 0, 0, .6);
+  }
+}
+
+.social-actions {
+  padding: 25px 0 0px;
+  div {
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  .glyphicon {
+    font-size: 20px;
+  }
+
+  .glyphicon:not(:first-child) {
+    margin-left: 10px;
+  }
+  .glyphicon:first-child {
+    margin-right: 10px;
+  }
+}
+
+.darker-bg {
+  background-color: #FAFAFA;
+}
+
+div.related__block,div.comments__block{
+  margin:40px 0;
+}
+
+div.comments__block>div{
+  padding-bottom: 20px;
+}
 
 
