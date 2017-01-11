@@ -52,6 +52,18 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .container-small {
+    max-width: 1170px;
+  }
+}
+
+.container, .container-fluid {
+  &.darker-bg {
+    background-color: #FAFAFA;
+  }
+}
+
 body {
   font-family: "ProximaNova", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -198,16 +210,53 @@ article.article__block {
   }
 }
 
-.darker-bg {
-  background-color: #FAFAFA;
+div.related-block, div.comments-block {
+  margin: 40px 0;
 }
 
-div.related__block,div.comments__block{
-  margin:40px 0;
+div.related-block {
+
+  box-shadow: 0 1px 7px rgba(0, 0, 0, .05);
+  border: 1px solid rgba(0, 0, 0, .04);
+
+  &__article-detail {
+    background: #ffffff;
+    padding: 5px;
+  }
+
+  a:link {
+    color: rgba(0, 0, 0, .44);
+  }
+
+  &__title {
+    font-family: 'ProximaNova';
+    font-style: normal;
+    font-weight: 700;
+    color: #000000;
+    font-size: 17px;
+    margin-top: 5px;
+  }
 }
 
-div.comments__block>div{
+div.comments-block > div {
   padding-bottom: 20px;
 }
+
+.biography-block {
+  span {
+    margin-left: 5px;
+    font-family: 'ProximaNova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+
+.biography-block > div {
+  margin-bottom: 20px;
+}
+
+
+
 
 
