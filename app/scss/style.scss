@@ -52,11 +52,13 @@
   }
 }
 
-@media (min-width: 1200px) {
+/**
+@media (min-width: 1920px) {
   .container-small {
-    max-width: 1170px;
+    max-width: 970px;
   }
 }
+**/
 
 .container, .container-fluid {
   &.darker-bg {
@@ -80,6 +82,32 @@ a {
   &:hover {
     text-decoration: none;
   }
+}
+
+.navigation-block {
+  margin-bottom: 20px;
+}
+
+.share-block {
+  position: fixed;
+  top: 20%;
+  left: 25%;
+
+  &__icons {
+    display: inline-block;
+  }
+
+  &__label {
+    text-transform: capitalize;
+  }
+  &__icons i {
+    padding-top: 5px;
+    font-size: 22px;
+    &.fa-heart-o {
+      color: red;
+    }
+  }
+
 }
 
 //Blog post page

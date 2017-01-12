@@ -5,17 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Darktips.com minimalist theme</title>
+    <style>
+        .sharebar {
+            position: fixed;
+            float: left;
+            padding: 1px 0 0 2px;
+            margin-top: 70px;
+            margin-right: 20px;
+            z-index: 999;
+            background: #CCCCD1;
+            border-color: #D7D8E9;
+            border-style: solid;
+        }
+    </style>
 </head>
 
 <body>
 
-<header class="container-fluid">
+<header class="container-fluid navigation-block">
     <div class="row">
-        <div class="logo col-md-2 col-md-offset-1">
+        <div class="logo col-md-1 col-md-offset-1">
             <a href="https://darktips.com"><img class="img-responsive" src="app/img/logo.png"
                                                 alt="darktips.com logo"></a>
         </div>
     </div>
+    <hr>
 </header>
 
 <div class="container container-small">
@@ -187,11 +201,11 @@
             <div class="related-main-block">
                 <div class="col-md-4">
                     <div class="related-block">
-                        <img src="https://placehold.it/360x250" class="img-responsive"/>
+                        <img src="https://placehold.it/720x250" class="img-responsive"/>
                         <div class="related-block__article-detail">
                             <a href="#">
                                 <div class="class-muted related-block__tag">
-                                    Also tagged Windows
+                                    Also tagged <a href="#" class="tag--windows">Windows</a>
                                 </div>
                                 <div class="related-block__title">
                                     How to become a super user on Windows 10
@@ -202,11 +216,11 @@
                 </div>
                 <div class="col-md-4">
                     <div class="related-block">
-                        <img src="https://placehold.it/360x250" class="img-responsive"/>
+                        <img src="https://placehold.it/720x250" class="img-responsive"/>
                         <div class="related-block__article-detail">
                             <a href="#">
                                 <div class="class-muted related-block__tag">
-                                    Also tagged Facebook
+                                    Also tagged <a href="#" class="tag--other">Emal</a>
                                 </div>
                                 <div class="related-block__title">
                                     Another Post on Facebook
@@ -217,11 +231,11 @@
                 </div>
                 <div class="col-md-4">
                     <div class="related-block">
-                        <img src="https://placehold.it/360x250" class="img-responsive"/>
+                        <img src="https://placehold.it/720x250" class="img-responsive"/>
                         <div class="related-block__article-detail">
                             <a href="#">
                                 <div class="class-muted related-block__tag">
-                                    Also tagged Twitter
+                                    Also tagged <a href="#" class="tag--facebook">Emal</a>
                                 </div>
                                 <div class="related-block__title">
                                     How to login on Facebook
@@ -236,22 +250,31 @@
         <div class="row">
             <div class="comments-block">
                 <div class="col-md-8 col-md-offset-2">
-                    <label for="comment">Your comment:</label>
-                    <textarea class="form-control" id="comment" rows="3"
-                              placeholder="Have something to say?"></textarea>
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="comment">Your comment:</label>
+                            <textarea class="form-control" id="comment" rows="3" placeholder="Have something to say?">
+                            </textarea>
+                        </div>
+
+                        <div class="checkbox pull-left">
+                            <label class="text-muted">
+                                <input type="checkbox"> Notify me of replies
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary pull-right col-md-3">Answer</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
     </footer>
-
 </div>
 
 
 <footer class="footer footer__block">
     <div class="container-fluid text-center">
         <p class="text-muted">Copyright © 2017 Darktips. All Rights Reserved. </p>
-
         <ul class="list-inline">
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
@@ -264,6 +287,24 @@
 
 
 <link rel="stylesheet" href="app/css/bootstrap.css">
+<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="app/css/style.css">
+
+<div class="share-block text-center">
+    <div class="share-block__label ">Share</div>
+    <div class="share-block__icons ">
+        <div>
+            <a href="#"><i class="fa fa-twitter text-muted" aria-hidden="true"></i></a>
+        </div>
+        <div>
+            <a href="#"><i class="fa fa-facebook text-muted" aria-hidden="true"></i></span></a>
+        </div>
+        <div>
+            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></span></a>
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>
