@@ -23,6 +23,11 @@ var fonts = {
     out: dest + 'fonts/'
 };
 
+var js = {
+    in: [source + 'js/*.js', bootstrapSass.in + 'assets/javascripts/bootstrap/*.js'],
+    out: dest + 'js/'
+}
+
 var img = {
     in: [source + 'img/*.*',],
     out: dest + 'img/'
@@ -58,6 +63,11 @@ gulp.task('bootstrap', function () {
 gulp.task('img', function () {
     return gulp.src(img.in)
         .pipe(gulp.dest(img.out));
+});
+
+gulp.task('javascript', function () {
+    return gulp.src(js.in)
+        .pipe(gulp.dest(js.out));
 });
 
 
