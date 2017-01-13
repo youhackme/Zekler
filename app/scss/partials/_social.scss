@@ -1,0 +1,40 @@
+.social-actions {
+  padding: 25px 0 0px;
+  div {
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  .glyphicon {
+    font-size: 20px;
+  }
+
+  .glyphicon:not(:first-child) {
+    margin-left: 10px;
+  }
+  .glyphicon:first-child {
+    margin-right: 10px;
+  }
+}
+
+.share-block {
+  position: fixed;
+  top: 20%;
+  left: 0%;
+
+  &__icons {
+    display: inline-block;
+  }
+
+  &__label {
+    text-transform: capitalize;
+  }
+  &__icons i {
+    padding-top: 5px;
+    font-size: 22px;
+    &.fa-heart-o {
+      color: red;
+    }
+  }
+
+}

@@ -1,6 +1,7 @@
 @import 'partials/fontproximanova';
 @import 'partials/fontdiarapro';
 @import 'partials/tag';
+@import 'partials/social';
 @import 'partials/featured';
 @import 'partials/footer';
 
@@ -88,27 +89,7 @@ a {
   margin-bottom: 20px;
 }
 
-.share-block {
-  position: fixed;
-  top: 20%;
-  left: 25%;
 
-  &__icons {
-    display: inline-block;
-  }
-
-  &__label {
-    text-transform: capitalize;
-  }
-  &__icons i {
-    padding-top: 5px;
-    font-size: 22px;
-    &.fa-heart-o {
-      color: red;
-    }
-  }
-
-}
 
 //Blog post page
 
@@ -219,24 +200,7 @@ article.article__block {
   }
 }
 
-.social-actions {
-  padding: 25px 0 0px;
-  div {
-    display: inline-block;
-    font-size: 24px;
-    margin-left: 10px;
-  }
-  .glyphicon {
-    font-size: 20px;
-  }
 
-  .glyphicon:not(:first-child) {
-    margin-left: 10px;
-  }
-  .glyphicon:first-child {
-    margin-right: 10px;
-  }
-}
 
 div.related-block, div.comments-block {
   margin: 40px 0;
