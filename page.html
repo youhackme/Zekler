@@ -5,19 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Darktips.com minimalist theme</title>
-    <style>
-        .sharebar {
-            position: fixed;
-            float: left;
-            padding: 1px 0 0 2px;
-            margin-top: 70px;
-            margin-right: 20px;
-            z-index: 999;
-            background: #CCCCD1;
-            border-color: #D7D8E9;
-            border-style: solid;
-        }
-    </style>
+
+
+
 </head>
 
 <body>
@@ -215,6 +205,24 @@
                     </div>
                 </div>
                 <div class="col-md-4">
+
+                    <div class="share-block text-center">
+                        <div class="share-block__label ">Share</div>
+                        <div class="share-block__icons ">
+                            <div>
+                                <a href="#"><i class="fa fa-twitter text-muted" aria-hidden="true"></i></a>
+                            </div>
+                            <div>
+                                <a href="#"><i class="fa fa-facebook text-muted" aria-hidden="true"></i></span></a>
+                            </div>
+                            <div>
+                                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
                     <div class="related-block">
                         <img src="https://placehold.it/720x250" class="img-responsive"/>
                         <div class="related-block__article-detail">
@@ -285,26 +293,20 @@
     </div>
 </footer>
 
-
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="app/js/share.js"></script>
 <link rel="stylesheet" href="app/css/bootstrap.css">
 <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="app/css/style.css">
 
-<div class="share-block text-center">
-    <div class="share-block__label ">Share</div>
-    <div class="share-block__icons ">
-        <div>
-            <a href="#"><i class="fa fa-twitter text-muted" aria-hidden="true"></i></a>
-        </div>
-        <div>
-            <a href="#"><i class="fa fa-facebook text-muted" aria-hidden="true"></i></span></a>
-        </div>
-        <div>
-            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></span></a>
-        </div>
-    </div>
 
-</div>
+<script>
+    $(function () {
 
+
+        shareBlock.init();
+
+    })
+</script>
 </body>
 </html>
