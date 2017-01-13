@@ -17,24 +17,3 @@
   }
 }
 
-.share-block {
-  position: fixed;
-  top: 20%;
-  left: 0%;
-
-  &__icons {
-    display: inline-block;
-  }
-
-  &__label {
-    text-transform: capitalize;
-  }
-  &__icons i {
-    padding-top: 5px;
-    font-size: 22px;
-    &.fa-heart-o {
-      color: red;
-    }
-  }
-
-}
