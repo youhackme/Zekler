@@ -39,7 +39,22 @@ var fonts = {
 };
 
 var js = {
-    in: [source + 'js/*.js', bootstrapSass.in + 'assets/javascripts/bootstrap/*.js'],
+    in: [
+        source + 'js/*.js',
+        //bootstrapSass.in + 'assets/javascripts/bootstrap/affix.js',
+        //bootstrapSass.in + 'assets/javascripts/bootstrap/alert.js',
+        //bootstrapSass.in + 'assets/javascripts/bootstrap/button.js',
+        //bootstrapSass.in + 'assets/javascripts/bootstrap/carousel.js',
+        // bootstrapSass.in + 'assets/javascripts/bootstrap/collapse.js',
+        // bootstrapSass.in + 'assets/javascripts/bootstrap/dropdown.js',
+        // bootstrapSass.in + 'assets/javascripts/bootstrap/modal.js',
+        //bootstrapSass.in + 'assets/javascripts/bootstrap/popover.js',
+        //bootstrapSass.in + 'assets/javascripts/bootstrap/scrollspy.js',
+        // bootstrapSass.in + 'assets/javascripts/bootstrap/tab.js',
+        //bootstrapSass.in + 'assets/javascripts/bootstrap/tooltip.js',
+        // bootstrapSass.in + 'assets/javascripts/bootstrap/transition.js',
+
+    ],
     out: dest + 'js/'
 }
 
