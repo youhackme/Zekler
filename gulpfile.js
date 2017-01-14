@@ -89,12 +89,7 @@ gulp.task('javascript', function () {
 
 
 gulp.task('lint', function () {
-    return gulp.src(js.in).pipe(eslint({
-        'rules': {
-            'quotes': [1, 'single'],
-            'semi': [1, 'always']
-        }
-    }))
+    return gulp.src(js.in).pipe(eslint())
         .pipe(eslint.format())
         // Brick on failure to be super strict
         .pipe(eslint.failOnError());
