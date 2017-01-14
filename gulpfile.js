@@ -55,7 +55,7 @@ var img = {
 
 // Our scss source folder: .scss files
 var scss = {
-    in: source + 'scss/main.scss',
+    in: source + 'scss/style.scss',
     out: dest + 'css/',
     watch: source + 'scss/**/*',
     sassOpts: {
@@ -87,6 +87,7 @@ gulp.task('fonts', function () {
 gulp.task('bootstrap', function () {
     return gulp.src(scss.in)
         .pipe(sass(scss.sassOpts))
+        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(scss.out));
 });
 
