@@ -1,6 +1,6 @@
 var shareBlock = {
     config: {
-        offset: 120,//px
+        offset: 120,
         appearWhenScrolledTo: {//%
             start: 5,
             stop: 93
@@ -38,7 +38,7 @@ var shareBlock = {
     },
     OnResize: function () {
         var window = $(this); //this = window
-        if (win.width() >= 1280) {
+        if (window.width() >= 1280) {
             shareBlock.show();
         } else {
             shareBlock.hide();
