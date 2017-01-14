@@ -28,7 +28,7 @@ var shareBlock = {
     },
     placement: function (browserWindow, containerWidth) {
         var ShareBlockPosition = (browserWindow - containerWidth) / 2 - this.config.offset;
-        $('.share-block').css('left', ShareBlockPosition)
+        $('.share-block').css('left', ShareBlockPosition);
     },
     show: function () {
         $('.share-block').fadeIn();
@@ -54,4 +54,4 @@ var shareBlock = {
             shareBlock.hide();
         }
     }
-}
+};
