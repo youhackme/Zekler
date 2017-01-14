@@ -12,17 +12,6 @@ var autoprefixerOptions = {
     browsers: ['last 5 versions', '> 1%']
 };
 
-
-gulp.task('sass', function () {
-    return gulp.src('app/scss/style.scss')
-        .pipe(sass()) // Using gulp-sass
-        .pipe(rename({suffix: '.min'}))
-        .pipe(autoprefixer(autoprefixerOptions))
-        .pipe(minifyCss())
-        .pipe(gulp.dest('build/css/'))
-});
-
-
 // source and distribution folder
 var source = 'app/',
     dest = 'build/';
@@ -42,7 +31,7 @@ var js = {
     in: [
         source + 'js/*.js',
         //bootstrapSass.in + 'assets/javascripts/bootstrap/affix.js',
-        //bootstrapSass.in + 'assets/javascripts/bootstrap/alert.js',
+        bootstrapSass.in + 'assets/javascripts/bootstrap/alert.js',
         //bootstrapSass.in + 'assets/javascripts/bootstrap/button.js',
         //bootstrapSass.in + 'assets/javascripts/bootstrap/carousel.js',
         // bootstrapSass.in + 'assets/javascripts/bootstrap/collapse.js',
@@ -55,7 +44,8 @@ var js = {
         // bootstrapSass.in + 'assets/javascripts/bootstrap/transition.js',
 
     ],
-    out: dest + 'js/'
+    out: dest + 'js/',
+    watch: source + 'js/*.js',
 }
 
 var img = {
@@ -75,6 +65,17 @@ var scss = {
         includePaths: [bootstrapSass.in + 'assets/stylesheets']
     }
 };
+
+
+gulp.task('sass', function () {
+    return gulp.src('app/scss/style.scss')
+        .pipe(sass()) // Using gulp-sass
+        .pipe(rename({suffix: '.min'}))
+        .pipe(autoprefixer(autoprefixerOptions))
+        .pipe(minifyCss())
+        .pipe(gulp.dest('build/css/'))
+});
+
 
 // copy bootstrap required fonts to dest
 gulp.task('fonts', function () {
@@ -112,6 +113,7 @@ gulp.task('lint', function () {
 
 
 // default task
-gulp.task('default', ['sass'], function () {
+gulp.task('dev', ['sass','javascript','fonts','bootstrap'], function () {
     gulp.watch(scss.watch, ['sass']);
+    gulp.watch(js.watch, ['javascript']);
 });
