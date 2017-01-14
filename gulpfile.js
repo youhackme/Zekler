@@ -1,10 +1,25 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var rename = require('gulp-rename');
+var minifyCss = require("gulp-minify-css");
+var uglify = require("gulp-uglify");
+var concat = require("gulp-concat");
+const eslint = require('gulp-eslint');
+
+
+var autoprefixerOptions = {
+    browsers: ['last 5 versions', '> 1%']
+};
+
 
 gulp.task('sass', function () {
     return gulp.src('app/scss/style.scss')
         .pipe(sass()) // Using gulp-sass
-        .pipe(gulp.dest('app/css/'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(autoprefixer(autoprefixerOptions))
+        .pipe(minifyCss())
+        .pipe(gulp.dest('build/css/'))
 });
 
 
@@ -67,7 +82,22 @@ gulp.task('img', function () {
 
 gulp.task('javascript', function () {
     return gulp.src(js.in)
+        .pipe(uglify())
+        .pipe(concat('all.js'))
         .pipe(gulp.dest(js.out));
+});
+
+
+gulp.task('lint', function () {
+    return gulp.src(js.in).pipe(eslint({
+        'rules': {
+            'quotes': [1, 'single'],
+            'semi': [1, 'always']
+        }
+    }))
+        .pipe(eslint.format())
+        // Brick on failure to be super strict
+        .pipe(eslint.failOnError());
 });
 
 
