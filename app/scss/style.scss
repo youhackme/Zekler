@@ -79,6 +79,7 @@ $bootstrap-sass-path: '../../node_modules/bootstrap-sass/assets/stylesheets/boot
 }
 
 a {
+
   &:hover {
     text-decoration: none;
   }
@@ -112,7 +113,7 @@ article.article-block {
 
   .middotDivider::after {
     content: "·";
-    margin:0 3px;
+    margin: 0 3px;
     color: rgba(0, 0, 0, .8);
   }
 }
