@@ -6,14 +6,20 @@
 
   &__icons {
     display: inline-block;
-    font-weight:100;
+    font-weight: 100;
   }
 
   &__label {
     font-size: 12px;
     text-transform: uppercase;
   }
+
+  &__upvote:hover i{
+    color: #ff7f7f !important;
+  }
+
   &__icons i {
+
     padding-top: 5px;
     font-size: 22px;
 
@@ -25,9 +31,15 @@
       1px 1px 0 #999;
     }
 
-    &.fa-heart-o,&.fa-heart {
-      color: #F01A3C;
+    &.fa-heart-o, &.fa-heart, &.fa-angle-up {
+      color: $gray-light;
     }
+
+    &.remove-padding {
+      padding: 0 !important;
+    }
+
+
 
   }
 
