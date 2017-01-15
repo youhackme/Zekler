@@ -1,0 +1,17 @@
+.search-block {
+  padding-top: 40px;
+  padding-right: 100px;
+  input {
+    border: none;
+    width: 0;
+  }
+
+  input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .glyphicon-search:hover {
+    cursor: pointer;
+  }
+}

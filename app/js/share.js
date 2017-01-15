@@ -1,4 +1,4 @@
-var shareBlock = {
+var share = {
     config: {
         offset: 120,
         appearWhenScrolledTo: {//%
@@ -27,8 +27,8 @@ var shareBlock = {
         return $( ".container-small" ).height();
     },
     placement: function( browserWindow, containerWidth ) {
-        var ShareBlockPosition = ( browserWindow - containerWidth ) / 2 - this.config.offset;
-        $( ".share-block" ).css( "left", ShareBlockPosition );
+        var sharePosition = ( browserWindow - containerWidth ) / 2 - this.config.offset;
+        $( ".share-block" ).css( "left", sharePosition );
     },
     show: function() {
         $( ".share-block" ).fadeIn();
@@ -39,21 +39,21 @@ var shareBlock = {
     OnResize: function() {
         var window = $( this ); //this = window
         if ( window.width() >= 1280 ) {
-            shareBlock.show();
+            share.show();
         } else {
-            shareBlock.hide();
+            share.hide();
         }
     },
     OnScroll: function() {
         var heightScrolled = $( window ).scrollTop();
-        var shareBlockPositionActive = ( heightScrolled ) / shareBlock.contentHeight() * 100;
+        var sharePositionActive = ( heightScrolled ) / share.contentHeight() * 100;
 
         //By default, appear when > than 20%
-        if ( shareBlockPositionActive >= shareBlock.config.appearWhenScrolledTo.start &&
-             shareBlockPositionActive <= shareBlock.config.appearWhenScrolledTo.stop ) {
-            shareBlock.show();
+        if ( sharePositionActive >= share.config.appearWhenScrolledTo.start &&
+             sharePositionActive <= share.config.appearWhenScrolledTo.stop ) {
+            share.show();
         } else {
-            shareBlock.hide();
+            share.hide();
         }
     }
 };

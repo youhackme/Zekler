@@ -64,6 +64,8 @@ $bootstrap-sass-path: '../../node_modules/bootstrap-sass/assets/stylesheets/boot
 @import 'partials/share';
 @import 'partials/featured';
 @import 'partials/footer';
+@import 'partials/search';
+
 
 // Customize container
 @media (min-width: 768px) {
@@ -83,6 +85,10 @@ a {
   &:hover {
     text-decoration: none;
   }
+}
+
+.logo-block {
+  padding-top:15px;
 }
 
 .navigation-block {

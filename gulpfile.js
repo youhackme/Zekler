@@ -29,6 +29,7 @@ var fonts = {
 
 var js = {
     in: [
+        './node_modules/jquery/dist/jquery.min.js',
         source + 'js/*.js',
         //bootstrapSass.in + 'assets/javascripts/bootstrap/affix.js',
         //bootstrapSass.in + 'assets/javascripts/bootstrap/alert.js',
@@ -36,7 +37,7 @@ var js = {
         //bootstrapSass.in + 'assets/javascripts/bootstrap/carousel.js',
         // bootstrapSass.in + 'assets/javascripts/bootstrap/collapse.js',
         // bootstrapSass.in + 'assets/javascripts/bootstrap/dropdown.js',
-         bootstrapSass.in + 'assets/javascripts/bootstrap/modal.js',
+        bootstrapSass.in + 'assets/javascripts/bootstrap/modal.js',
         //bootstrapSass.in + 'assets/javascripts/bootstrap/popover.js',
         //bootstrapSass.in + 'assets/javascripts/bootstrap/scrollspy.js',
         // bootstrapSass.in + 'assets/javascripts/bootstrap/tab.js',
@@ -116,7 +117,7 @@ gulp.task('lint', function () {
 
 
 // default task
-gulp.task('dev', ['sass','javascript','fonts','bootstrap'], function () {
+gulp.task('dev', ['sass', 'javascript', 'fonts', 'bootstrap'], function () {
     gulp.watch(scss.watch, ['sass']);
     gulp.watch(js.watch, ['javascript']);
 });

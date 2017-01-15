@@ -6,16 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zekler theme</title>
     <link rel="stylesheet" href="build/css/style.min.css">
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 
 <header class="container-fluid navigation-block">
     <div class="row">
-        <div class="logo col-md-1 col-md-offset-1">
+        <div class="logo-block col-md-2 col-md-offset-1">
             <a href="https://darktips.com">
-                <img class="img-responsive" src="app/img/logo.png" alt="darktips.com logo">
+                <img class="img-responsive" src="build/img/logo.png" alt="darktips.com logo">
             </a>
+        </div>
+        <div class="col-md-9">
+            <div class="search-block pull-right">
+                <form method="post">
+                    <label for="search">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"> </span>
+                    </label>
+                    <input id="search" name="search" placeholder="Search.." autocomplete="off">
+                </form>
+
+            </div>
         </div>
     </div>
     <hr>
@@ -302,16 +313,14 @@
     </div>
 </footer>
 
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="app/js/share.js"></script>
+
+<script src="build/js/all.js"></script>
 
 
 <script>
     $(function () {
-
-
-        shareBlock.init();
-
+        share.init();
+        search.init();
     })
 </script>
 </body>

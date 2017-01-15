@@ -1,12 +1,12 @@
 {
-  "name": "darktips.com",
+  "name": "Zekler",
   "version": "1.0.0",
-  "description": "Watch me build a WordPress theme from scratch for darktips.com!",
+  "description": "Zekler - A minimalist blog theme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Hayder Abbass",
   "license": "ISC",
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
@@ -20,7 +20,9 @@
     "gulp-uglify": "^2.0.0"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "gulp-html-validator": "0.0.5",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "jquery": "^3.1.1"
   }
 }
