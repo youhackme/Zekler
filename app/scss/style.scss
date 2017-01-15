@@ -109,6 +109,12 @@ article.article-block {
     color: #000000;
     font-weight: 400;
   }
+
+  .middotDivider::after {
+    content: "·";
+    margin:0 3px;
+    color: rgba(0, 0, 0, .8);
+  }
 }
 
 article.article-block {
@@ -123,7 +129,7 @@ article.article-block {
 
   figure {
     display: inline-block;
-    margin: 20px;
+    margin: 10px;
   }
   figure img {
     vertical-align: top;

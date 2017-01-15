@@ -1,19 +1,20 @@
 .social-actions {
   padding: 25px 0 0px;
+  color: $gray-light;
   div {
     display: inline-block;
     font-size: 24px;
     margin-left: 10px;
   }
-  .glyphicon {
+  .fa {
     font-size: 20px;
   }
 
-  .glyphicon:not(:first-child) {
-    margin-left: 10px;
+  .fa:not(:first-child) {
+    margin-left: 5px;
   }
-  .glyphicon:first-child {
-    margin-right: 10px;
+  .fa:first-child {
+    margin-right: 5px;
   }
 }
 

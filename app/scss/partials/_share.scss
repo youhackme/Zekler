@@ -25,14 +25,17 @@
 
     &.fa-outline {
       color: #fff;
-      text-shadow: -1px -1px 0 #999,
-      1px -1px 0 #999,
-      -1px 1px 0 #999,
-      1px 1px 0 #999;
+      text-shadow: -1px -1px 0 $gray-light,
+      1px -1px 0 $gray-light,
+      -1px 1px 0 $gray-light,
+      1px 1px 0 $gray-light;
     }
 
     &.fa-heart-o, &.fa-heart, &.fa-angle-up {
       color: $gray-light;
+    }
+    &.fa-angle-up {
+      display: block;
     }
 
     &.remove-padding {
