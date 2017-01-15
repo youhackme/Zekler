@@ -31,12 +31,12 @@ var js = {
     in: [
         source + 'js/*.js',
         //bootstrapSass.in + 'assets/javascripts/bootstrap/affix.js',
-        bootstrapSass.in + 'assets/javascripts/bootstrap/alert.js',
+        //bootstrapSass.in + 'assets/javascripts/bootstrap/alert.js',
         //bootstrapSass.in + 'assets/javascripts/bootstrap/button.js',
         //bootstrapSass.in + 'assets/javascripts/bootstrap/carousel.js',
         // bootstrapSass.in + 'assets/javascripts/bootstrap/collapse.js',
         // bootstrapSass.in + 'assets/javascripts/bootstrap/dropdown.js',
-        // bootstrapSass.in + 'assets/javascripts/bootstrap/modal.js',
+         bootstrapSass.in + 'assets/javascripts/bootstrap/modal.js',
         //bootstrapSass.in + 'assets/javascripts/bootstrap/popover.js',
         //bootstrapSass.in + 'assets/javascripts/bootstrap/scrollspy.js',
         // bootstrapSass.in + 'assets/javascripts/bootstrap/tab.js',
@@ -60,7 +60,7 @@ var scss = {
     watch: source + 'scss/**/*',
     sassOpts: {
         outputStyle: 'nested',
-        precison: 3,
+        precision: 3,
         errLogToConsole: true,
         includePaths: [bootstrapSass.in + 'assets/stylesheets']
     }
@@ -88,6 +88,8 @@ gulp.task('bootstrap', function () {
     return gulp.src(scss.in)
         .pipe(sass(scss.sassOpts))
         .pipe(rename({suffix: '.min'}))
+        .pipe(autoprefixer(autoprefixerOptions))
+        .pipe(minifyCss())
         .pipe(gulp.dest(scss.out));
 });
 

@@ -31,7 +31,7 @@
                 <p class="meta-block__other text-muted">3 days ago - 3 min read - Windows</p>
             </div>
         </div>
-        <article class="article__block">
+        <article class="article-block">
             <h1> My First dummy article for darktips</h1>
             <p>
                 Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit. Sed venenatis lacus risus, non rutrum
@@ -151,7 +151,7 @@
         </article>
         <footer>
             <div class="row">
-                <div class="tags__block">
+                <div class="tags-block">
                     <a href="#">Windows</a>
                     <a href="#">Facebook</a>
                     <a href="#">Twitter</a>
@@ -205,17 +205,29 @@
                 <div class="col-md-4">
 
                     <div class="share-block text-center">
-                        <div class="share-block__label ">Share</div>
-                        <div class="share-block__icons ">
+                        <div class="share-block__label text-muted">Share</div>
+                        <div class="share-block__icons">
                             <div>
-                                <a href="#"><i class="fa fa-twitter text-muted" aria-hidden="true"></i></a>
+                                <a href="#">
+                                    <i title="Show some love if you enjoyed this article" class="fa fa-heart"
+                                       aria-hidden="true"></i>
+                                    <div class="text-muted">24</div>
+                                </a>
                             </div>
                             <div>
-                                <a href="#"><i class="fa fa-facebook text-muted" aria-hidden="true"></i></span></a>
+                                <a title="Share on Twitter" href="#">
+                                    <i class="fa fa-twitter fa-outline text-muted" aria-label="true"></i>
+                                </a>
+                                <div class="text-muted">10</div>
                             </div>
                             <div>
-                                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></span></a>
+                                <a title="Share on Facebook" href="#">
+                                    <i class="fa fa-facebook fa-outline text-muted" aria-hidden="true"></i>
+
+                                </a>
+                                <div class="text-muted">15</div>
                             </div>
+
                         </div>
 
                     </div>
@@ -268,7 +280,7 @@
                                 <input type="checkbox"> Notify me of replies
                             </label>
                         </div>
-                        <button type="submit" class="btn btn-primary pull-right col-md-3">Answer</button>
+                        <button type="submit" class="btn btn-primary btn-outline pull-right col-md-3 ">Answer</button>
                     </form>
                 </div>
             </div>
@@ -278,7 +290,7 @@
 </div>
 
 
-<footer class="footer footer__block">
+<footer class="footer footer-block">
     <div class="container-fluid text-center">
         <p class="text-muted">Copyright © 2017 Darktips. All Rights Reserved. </p>
         <ul class="list-inline">
@@ -293,8 +305,6 @@
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="app/js/share.js"></script>
-
-
 
 
 <script>

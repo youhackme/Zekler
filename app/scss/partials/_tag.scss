@@ -23,35 +23,35 @@ a.tag {
     border: 1px solid #009061;
     color: #009061 !important;
   }
+}
 
-  .btn-outline {
-    background-color: transparent;
-    color: inherit;
-    transition: all .5s;
-  }
 
-  .btn-primary.btn-outline {
-    color: #428bca;
-  }
+.btn-outline {
+  background-color: transparent;
+  color: inherit;
+  transition: all .5s;
+}
 
-  .btn-success.btn-outline {
-    color: #5cb85c;
-  }
+.btn-primary.btn-outline {
+  color: #428bca;
+}
 
-  .btn-info.btn-outline {
-    color: #5bc0de;
-  }
+.btn-success.btn-outline {
+  color: #5cb85c;
+}
 
-  .btn-warning.btn-outline {
-    color: #f0ad4e;
-  }
+.btn-info.btn-outline {
+  color: #5bc0de;
+}
 
-  .btn-danger.btn-outline {
-    color: #d9534f;
-  }
+.btn-warning.btn-outline {
+  color: #f0ad4e;
+}
 
-  .btn-primary.btn-outline:hover, .btn-success.btn-outline:hover, .btn-info.btn-outline:hover, .btn-warning.btn-outline:hover, .btn-danger.btn-outline:hover {
-    color: #fff;
-  }
+.btn-danger.btn-outline {
+  color: #d9534f;
+}
 
+.btn-primary.btn-outline:hover, .btn-success.btn-outline:hover, .btn-info.btn-outline:hover, .btn-warning.btn-outline:hover, .btn-danger.btn-outline:hover {
+  color: #fff;
 }

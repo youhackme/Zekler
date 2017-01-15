@@ -6,17 +6,29 @@
 
   &__icons {
     display: inline-block;
+    font-weight:100;
   }
 
   &__label {
-    text-transform: capitalize;
+    font-size: 12px;
+    text-transform: uppercase;
   }
   &__icons i {
     padding-top: 5px;
     font-size: 22px;
-    &.fa-heart-o {
-      color: red;
+
+    &.fa-outline {
+      color: #fff;
+      text-shadow: -1px -1px 0 #999,
+      1px -1px 0 #999,
+      -1px 1px 0 #999,
+      1px 1px 0 #999;
     }
+
+    &.fa-heart-o,&.fa-heart {
+      color: #F01A3C;
+    }
+
   }
 
 }

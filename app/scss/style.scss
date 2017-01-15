@@ -1,7 +1,62 @@
+// Bootstrap customization
 @import "variables";
-@import "bootstrap";
-@import "bootstrap/theme";
 
+$bootstrap-sass-path: '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/';
+// Core variables and mixins
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/print";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+
+// Core CSS
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+
+// Components
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pagination";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pager";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/labels";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/badges";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/media";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/list-group";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/panels";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/wells";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/close";
+
+// Components w/ JavaScript
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/popovers";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
+
+// Utility classes
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+//@import "bootstrap";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/theme";
+
+// Custom components from minimalism theme
 @import 'partials/fontproximanova';
 @import 'partials/fontdiarapro';
 @import 'partials/tag';
@@ -10,47 +65,6 @@
 @import 'partials/featured';
 @import 'partials/footer';
 
-/**
-* Customized container width! I need something bigger than the 960px!
-**/
-
-/**
-@media (min-width: 768px) {
-  .container-small {
-    width: 300px;
-  }
-
-  .container-large {
-    width: 970px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container-small {
-    width: 500px;
-  }
-
-  .container-large {
-
-    width: 1170px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container-small {
-    width: 700px;
-  }
-
-  .container-large {
-    width: 1260px;
-  }
-}
-
-.container-small, .container-large {
-  max-width: 100%;
-}
-**/
-
 // Customize container
 @media (min-width: 768px) {
   .container-small {
@@ -58,30 +72,10 @@
   }
 }
 
-/**
-@media (min-width: 1920px) {
-  .container-small {
-    max-width: 970px;
-  }
-}
-**/
-
 .container, .container-fluid {
   &.darker-bg {
     background-color: #FAFAFA;
   }
-}
-
-body {
-  font-family: "ProximaNova", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
-  font-weight: 100;
-  font-style: normal;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -94,32 +88,14 @@ a {
   margin-bottom: 20px;
 }
 
-
-
 //Blog post page
 
-article.article__block {
+article.article-block {
   font-family: "DiariaPro", Helvetica, Arial, sans-serif;
   font-size: 19px;
   font-weight: 300;
   font-style: normal;
   padding: 10px 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-h4 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 32px;
 }
 
 .meta-block {
@@ -131,15 +107,18 @@ h3 {
     font-size: 15px;
     line-height: 1;
     color: #000000;
+    font-weight: 400;
   }
 }
 
-article.article__block {
+article.article-block {
   p {
     font-family: "DiariaPro", Helvetica, Arial, sans-serif;
     font-weight: 100;
-    font-size: normal;
     line-height: 33px;
+    &::selection {
+      background: #ffb7b7;
+    }
   }
 
   figure {
@@ -154,7 +133,9 @@ article.article__block {
     font-family: "ProximaNova", Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 100;
+    margin-top: 7px;
+    color: $gray-light;
   }
   figure + p {
     margin-top: 28px;
@@ -190,7 +171,7 @@ article.article__block {
 
 }
 
-.tags__block {
+.tags-block {
   a {
     color: rgba(0, 0, 0, .6);
     background: rgba(0, 0, 0, .05);
@@ -204,8 +185,6 @@ article.article__block {
     color: rgba(0, 0, 0, .6);
   }
 }
-
-
 
 div.related-block, div.comments-block {
   margin: 40px 0;
