@@ -1,4 +1,4 @@
-var shareBlock = {
+var share = {
     config: {
         offset: 120,
         appearWhenScrolledTo: {//%

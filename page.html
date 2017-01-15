@@ -321,16 +321,8 @@
     $(function () {
 
 
-        shareBlock.init();
-
-
-        $('#search').focus(function () {
-            $(this).attr('data-default', $(this).width());
-            $(this).animate({width: 150}, 'slow');
-        }).blur(function () {
-            var defaultWidth = $(this).attr('data-default');
-            $(this).animate({width: defaultWidth}, 'fast');
-        });
+        share.init();
+        search.init();
 
 
     })
