@@ -1,0 +1,23 @@
+.response-block {
+  padding: 5px;
+  font-size: 18px;
+  &__wrapper {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .03);
+    border: 1px solid rgba(0, 0, 0, .09);
+  }
+  &__author-name {
+    font-size: 13px;
+    margin:0;
+  }
+  &__content {
+    padding: 10px 15px;
+  }
+
+  p span {
+    font-size: 13px;
+    margin: 0;
+  }
+}
