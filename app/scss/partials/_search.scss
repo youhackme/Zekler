@@ -1,6 +1,9 @@
 .search-block {
   padding-top: 40px;
   padding-right: 100px;
+  @media screen and (max-width: 991px) {
+    padding-right: 0;
+  }
   input {
     border: none;
     width: 0;
@@ -13,5 +16,10 @@
 
   .glyphicon-search:hover {
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 991px) {
+    float: none !important;
+    text-align: center;
   }
 }
