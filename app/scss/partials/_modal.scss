@@ -1,0 +1,28 @@
+.modal-block {
+  text-align: center;
+  font-family: "ProximaNova", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  margin-top: 7px;
+
+  &__close {
+    font-size: 40px;
+    font-weight: 100;
+
+  }
+  .modal-header {
+    padding-bottom: 0;
+  }
+
+  .modal-body {
+    padding-top: 0;
+  }
+
+  &__subscribe {
+    padding-top: 10px;
+    padding-bottom: 35px;
+  }
+  h4 {
+    font-weight: 100;
+  }
+}

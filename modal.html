@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zekler theme - Modal</title>
+    <link rel="stylesheet" href="build/css/style.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+<header class="container-fluid navigation-block">
+    <div class="row">
+        <div class="logo-block col-md-2 col-md-offset-1">
+            <a href="https://darktips.com">
+                <img class="img-responsive" src="build/img/logo.png" alt="darktips.com logo">
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div class="search-block pull-right">
+                <form method="post">
+                    <label for="search">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"> </span>
+                    </label>
+                    <input id="search" name="search" placeholder="Search.." autocomplete="off">
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+</header>
+
+<div class="container container-small">
+    <div class="content col-md-12">
+        <div class="row meta-block">
+            <div class="col-md-1">
+                <img src="build/img/hyder.jpeg" class="img-circle">
+            </div>
+            <div class="col-md-11">
+                <p class="meta-block__author-name">Hyder Abbass</p>
+                <p class="meta-block__other text-muted">
+                    <span>January 5, 2017</span>
+                    <span class="middotDivider"></span>
+                    <span>Windows</span>
+                    <span class="middotDivider"></span>
+                    <span><i class="fa fa-comment-o" aria-hidden="true"></i> 10</span>
+                    <span class="middotDivider"></span>
+                    <span><i class="fa fa-eye" aria-hidden="true"></i> 2k</span>
+                </p>
+            </div>
+        </div>
+        <article class="article-block">
+            <h1> My First dummy article for darktips</h1>
+            <p>
+                Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit. Sed venenatis lacus risus, non rutrum
+                ante
+                ullamcorper
+                laoreet. Mauris vitae egestas enim. In sed tellus ac ligula volutpat condimentum. Praesent placerat
+                vestibulum
+                tellus vitae placerat.
+                <stong>Sed elementum posuere risus</stong>
+                , quis vehicula risus ornare eu. Quisque erat turpis, egestas
+                sed sapien sit amet, lacinia sodales urna. Duis cursus porttitor velit, gravida ultrices nulla
+                scelerisque
+                sed.
+                Morbi non eros eget lorem facilisis eleifend eget et tellus.
+            </p>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#subscribe">
+                Launch demo modal
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade modal-block" id="subscribe" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close modal-block__close" data-dismiss="modal"
+                                    aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <h4>Sign up for our awesome Newletter!</h4>
+                                    <p class="text-muted">Great tips delivered to your inbox.</p>
+                                    <input type="text" class="form-control input-lg" placeholder="Enter your email.."/>
+
+                                </div>
+                            </div>
+                            <div class="row modal-block__subscribe">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <button type="button" class="btn btn-lg btn-primary btn-block" data-dismiss="modal">
+                                        Sign me up!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </article>
+        <footer>
+            <div class="row">
+                <div class="tags-block">
+                    <a href="#">Windows</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="biography-block">
+                    <div class="col-md-4">
+                        <img src="build/img/hyder.jpeg" class="img-circle">
+                        <span class="text-muted">Hyder Abbass</span>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<div class="container-fluid darker-bg">
+    <div class="container">
+        <div class="row">
+
+            <div class="related-main-block">
+                <div class="col-md-4">
+                    <div class="related-block">
+                        <img src="https://placehold.it/720x250" class="img-responsive"/>
+                        <div class="related-block__article-detail">
+                            <a href="#">
+                                <div class="class-muted related-block__tag">
+                                    Also tagged <a href="#" class="tag--windows">Windows</a>
+                                </div>
+                                <div class="related-block__title">
+                                    How to become a super user on Windows 10
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <div class="share-block text-center">
+                        <div class="share-block__label text-muted">Share</div>
+                        <div class="share-block__icons">
+                            <div class="share-block__upvote">
+                                <a href="#">
+                                    <i class="fa fa-angle-up remove-padding" aria-hidden="true"></i>
+                                    <i title="Show some love if you enjoyed this article"
+                                       class="fa fa-heart-o remove-padding"
+                                       aria-hidden="true"></i>
+                                    <div class="text-muted">24</div>
+                                </a>
+                            </div>
+                            <div>
+                                <a title="Share on Twitter" href="#">
+                                    <i class="fa fa-twitter fa-outline text-muted" aria-label="true"></i>
+                                </a>
+                                <div class="text-muted">10</div>
+                            </div>
+                            <div>
+                                <a title="Share on Facebook" href="#">
+                                    <i class="fa fa-facebook fa-outline text-muted" aria-hidden="true"></i>
+
+                                </a>
+                                <div class="text-muted">15</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="related-block">
+                        <img src="https://placehold.it/720x250" class="img-responsive"/>
+                        <div class="related-block__article-detail">
+                            <a href="#">
+                                <div class="class-muted related-block__tag">
+                                    Also tagged <a href="#" class="tag--other">Email</a>
+                                </div>
+                                <div class="related-block__title">
+                                    Another Post on Facebook
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="related-block">
+                        <img src="https://placehold.it/720x250" class="img-responsive"/>
+                        <div class="related-block__article-detail">
+                            <a href="#">
+                                <div class="class-muted related-block__tag">
+                                    Also tagged <a href="#" class="tag--facebook">Email</a>
+                                </div>
+                                <div class="related-block__title">
+                                    How to login on Facebook
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="comments-block">
+                <div class="col-md-8 col-md-offset-2">
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="comment">Your comment:</label>
+                            <textarea class="form-control" id="comment" rows="3" placeholder="Have something to say?">
+                            </textarea>
+                        </div>
+
+                        <div class="checkbox pull-left">
+                            <label class="text-muted">
+                                <input type="checkbox"> Notify me of replies
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary pull-right col-md-3 ">Answer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="response-block">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 ">
+                    <div class="response-block__wrapper">
+                        <div class="response-block__meta">
+                            <div class="col-md-1">
+                                <img src="build/img/hyder.jpeg" class="img-circle">
+                            </div>
+                            <div class="col-md-11">
+                                <p class="response-block__author-name">Hyder Abbass</p>
+                                <p class="response-block__other text-muted">
+                                    <span><small>January 5, 2017</small></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="response-block__content">
+                            <p>
+                                Pellentesque auctor hendrerit lorem, nec fermentum quam congue et. Curabitur
+                                faucibus congue nisl et vehicula.
+                            </p>
+                            <p>
+                                Pellentesque auctor hendrerit lorem, nec fermentum quam congue et. Curabitur
+                                faucibus congue nisl et vehicula. Pellentesque auctor hendrerit lorem, nec fermentum
+                                quam congue et. Curabitur
+                                faucibus congue nisl et vehicula.
+                            </p>
+                            <p>
+                                Curabitur
+                                faucibus congue nisl et vehicula. Pellentesque auctor hendrerit lorem, nec fermentum
+                                quam congue et. Curabitur
+                                faucibus congue nisl et vehicula.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="response-block">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 ">
+                    <div class="response-block__wrapper">
+                        <div class="response-block__meta">
+                            <div class="col-md-1">
+                                <img src="build/img/hyder.jpeg" class="img-circle">
+                            </div>
+                            <div class="col-md-11">
+                                <p class="response-block__author-name">Hyder Abbass</p>
+                                <p class="response-block__other text-muted">
+                                    <span><small>January 5, 2017</small></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="response-block__content">
+                            <p>
+                                Pellentesque auctor hendrerit lorem, nec fermentum quam congue et. Curabitur
+                                faucibus congue nisl et vehicula.
+                            </p>
+                            <p>
+                                Pellentesque auctor hendrerit lorem, nec fermentum quam congue et. Curabitur
+                                faucibus congue nisl et vehicula. Pellentesque auctor hendrerit lorem, nec fermentum
+                                quam congue et. Curabitur
+                                faucibus congue nisl et vehicula.
+                            </p>
+                            <p>
+                                Curabitur
+                                faucibus congue nisl et vehicula. Pellentesque auctor hendrerit lorem, nec fermentum
+                                quam congue et. Curabitur
+                                faucibus congue nisl et vehicula.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="response-block">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 ">
+                    <div class="response-block__wrapper">
+                        <div class="response-block__meta">
+                            <div class="col-md-1">
+                                <img src="build/img/hyder.jpeg" class="img-circle">
+                            </div>
+                            <div class="col-md-11">
+                                <p class="response-block__author-name">Hyder Abbass</p>
+                                <p class="response-block__other text-muted">
+                                    <span><small>January 5, 2017</small></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="response-block__content">
+                            <p>
+                                Pellentesque auctor hendrerit lorem, nec fermentum quam congue et. Curabitur
+                                faucibus congue nisl et vehicula.
+                            </p>
+                            <p>
+                                Pellentesque auctor hendrerit lorem, nec fermentum quam congue et. Curabitur
+                                faucibus congue nisl et vehicula. Pellentesque auctor hendrerit lorem, nec fermentum
+                                quam congue et. Curabitur
+                                faucibus congue nisl et vehicula.
+                            </p>
+                            <p>
+                                Curabitur
+                                faucibus congue nisl et vehicula. Pellentesque auctor hendrerit lorem, nec fermentum
+                                quam congue et. Curabitur
+                                faucibus congue nisl et vehicula.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </footer>
+    </div>
+</div>
+
+<footer class="footer footer-block">
+    <div class="container-fluid text-center">
+        <p class="text-muted">Copyright © 2017 Zekler. All Rights Reserved. </p>
+        <ul class="list-inline">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Send us your favorite tips</a></li>
+            <li><a href="#">Newletter</a></li>
+            <li><a href="#">RSS</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<script src="build/js/all.js"></script>
+
+
+<script>
+    $(function () {
+        share.init();
+        search.init();
+    })
+</script>
+</body>
+</html>
