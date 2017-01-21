@@ -7,6 +7,7 @@
     <title>Zekler theme - Modal</title>
     <link rel="stylesheet" href="build/css/style.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -60,7 +61,7 @@
                 laoreet. Mauris vitae egestas enim. In sed tellus ac ligula volutpat condimentum. Praesent placerat
                 vestibulum
                 tellus vitae placerat.
-                <stong>Sed elementum posuere risus</stong>
+                <strong>Sed elementum posuere risus</strong>
                 , quis vehicula risus ornare eu. Quisque erat turpis, egestas
                 sed sapien sit amet, lacinia sodales urna. Duis cursus porttitor velit, gravida ultrices nulla
                 scelerisque
@@ -68,44 +69,42 @@
                 Morbi non eros eget lorem facilisis eleifend eget et tellus.
             </p>
 
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#subscribe">
-                Launch demo modal
-            </button>
+            <div class="md-modal modal-block md-effect-12" id="modal-12">
+                <div class="modal-header">
+                    <button type="button" class="close md-close modal-block__close" data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="md-content">
+                    <h3>Sign up for our awesome Newletter!</h3>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <p class="text-muted">Great tips delivered to your inbox.</p>
+                                <input type="text" class="form-control input-lg" placeholder="Enter your email.."/>
 
-            <!-- Modal -->
-            <div class="modal fade modal-block" id="subscribe" tabindex="-1" role="dialog"
-                 aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close modal-block__close" data-dismiss="modal"
-                                    aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body text-center">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <h4>Sign up for our awesome Newletter!</h4>
-                                    <p class="text-muted">Great tips delivered to your inbox.</p>
-                                    <input type="text" class="form-control input-lg" placeholder="Enter your email.."/>
-
-                                </div>
                             </div>
-                            <div class="row modal-block__subscribe">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <button type="button" class="btn btn-lg btn-primary btn-block" data-dismiss="modal">
-                                        Sign me up!
-                                    </button>
-                                </div>
+                        </div>
+                        <div class="row modal-block__subscribe">
+                            <div class="col-md-8 col-md-offset-2">
+                                <button type="button" class="btn btn-lg btn-primary btn-block" data-dismiss="modal">
+                                    Sign me up!
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
+            <div class="container">
+                <div class="main clearfix">
+                    <div class="column">
+                        <button class="md-trigger" data-modal="modal-12">Just Me</button>
+                    </div>
+                </div>
+            </div><!-- /container -->
+            <div class="md-overlay"></div><!-- the overlay element -->
         </article>
         <footer>
             <div class="row">
@@ -349,8 +348,6 @@
                 </div>
             </div>
         </div>
-
-
         </footer>
     </div>
 </div>
@@ -367,7 +364,6 @@
         </ul>
     </div>
 </footer>
-
 
 <script src="build/js/all.js"></script>
 
