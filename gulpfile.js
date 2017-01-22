@@ -73,7 +73,7 @@ gulp.task('sass', function () {
         .pipe(sass()) // Using gulp-sass
         .pipe(rename({suffix: '.min'}))
         .pipe(autoprefixer(autoprefixerOptions))
-        .pipe(minifyCss())
+       // .pipe(minifyCss())
         .pipe(gulp.dest('build/css/'))
 });
 
@@ -117,7 +117,7 @@ gulp.task('lint', function () {
 
 
 // default task
-gulp.task('dev', ['sass', 'javascript', 'fonts', 'bootstrap'], function () {
+gulp.task('dev', ['sass', 'javascript', 'fonts', 'bootstrap','img'], function () {
     gulp.watch(scss.watch, ['sass']);
     gulp.watch(js.watch, ['javascript']);
 });

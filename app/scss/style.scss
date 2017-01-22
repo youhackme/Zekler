@@ -67,11 +67,33 @@ $bootstrap-sass-path: '../../node_modules/bootstrap-sass/assets/stylesheets/boot
 @import 'partials/search';
 @import 'partials/response';
 @import 'partials/modal';
-
+@import 'partials/sidebar';
 // Customize container
 @media (min-width: 768px) {
   .container-small {
     max-width: 760px;
+  }
+
+  .bigger-col-md-8 {
+    width: 100%;
+  }
+
+  .smaller-col-md-4 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-small {
+    max-width: 760px;
+  }
+
+  .bigger-col-md-8 {
+    width: 70%;
+  }
+
+  .smaller-col-md-4 {
+    width: 30%;
   }
 }
 
@@ -89,7 +111,7 @@ a {
 }
 
 .logo-block {
-  padding-top:15px;
+  padding-top: 15px;
 }
 
 .navigation-block {
@@ -200,18 +222,27 @@ article.article-block {
   }
 }
 
-div.related-block, div.comments-block {
+div.comments-block {
   margin: 40px 0;
 }
 
-div.related-block {
-
-  box-shadow: 0 1px 7px rgba(0, 0, 0, .05);
-  border: 1px solid rgba(0, 0, 0, .04);
+.related-block {
 
   &__article-detail {
     background: #ffffff;
     padding: 5px;
+  }
+
+  &--default, &--sidebar {
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .05);
+    border: 1px solid rgba(0, 0, 0, .04);
+  }
+  &--default {
+    margin: 40px 0;
+  }
+
+  &--sidebar {
+    margin: 20px 0;
   }
 
   a:link {
