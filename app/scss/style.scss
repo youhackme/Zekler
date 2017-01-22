@@ -88,7 +88,13 @@ a {
 }
 
 .logo-block {
-  padding-top:15px;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 991px) {
+  .logo-block a img {
+    margin: 0 auto;
+  }
 }
 
 .navigation-block {
