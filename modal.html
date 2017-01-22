@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zekler theme</title>
+    <title>Zekler theme - Modal</title>
     <link rel="stylesheet" href="build/css/style.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 </head>
@@ -32,7 +32,7 @@
     <hr>
 </header>
 
-<div class="container container-small share-widget">
+<div class="container container-small">
     <div class="content col-md-12">
         <div class="row meta-block">
             <div class="col-md-1">
@@ -68,104 +68,42 @@
                 Morbi non eros eget lorem facilisis eleifend eget et tellus.
             </p>
 
-            <figure>
-                <img class="img-responsive" src="https://cdn-images-1.medium.com/max/1600/1*Z5xzlki4yt073sOyBm_29Q.png"
-                     alt="">
-                <figcaption> A sexy image of a Mac Book Pro.</figcaption>
-            </figure>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#subscribe">
+                Launch demo modal
+            </button>
 
+            <!-- Modal -->
+            <div class="modal fade modal-block" id="subscribe" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close modal-block__close" data-dismiss="modal"
+                                    aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <h4>Sign up for our awesome Newletter!</h4>
+                                    <p class="text-muted">Great tips delivered to your inbox.</p>
+                                    <input type="text" class="form-control input-lg" placeholder="Enter your email.."/>
 
-            <p>
-                Phasellus sollicitudin est vitae leo pulvinar vehicula. Quisque id lacus malesuada ex porttitor
-                tristique.
-                Duis
-                facilisis lorem eget aliquam consectetur. Cras sodales libero diam, quis eleifend turpis vehicula a. Ut
-                lobortis
-                elementum rhoncus. Curabitur pharetra faucibus est, non facilisis nibh gravida eget. Quisque lobortis
-                fermentum
-                magna eget fermentum. Ut vitae diam laoreet ex bibendum consectetur. Nullam tincidunt bibendum leo vitae
-                fermentum. Vestibulum sit amet facilisis elit. Curabitur fermentum ac urna vehicula ultrices. Praesent
-                dui
-                massa, malesuada eu elit sit amet, eleifend pretium mi. Quisque ut libero vitae lacus pharetra egestas
-                interdum
-                ac ipsum. Etiam venenatis, nisl ac volutpat pellentesque, eros turpis mollis ex, non imperdiet risus
-                nisi ut
-                nunc. Cras ornare risus leo, nec gravida magna molestie sed.
-                Donec ut sem dui. Vivamus ut ipsum eget nisl tempor egestas. Nulla blandit sollicitudin <a href="#">quam
-                in pulvinar</a>.
-                Nullam
-                euismod gravida lectus ut lobortis. Vestibulum molestie magna nec enim consequat, sit amet lobortis odio
-                ullamcorper. Pellentesque auctor hendrerit lorem, nec fermentum quam congue et. Curabitur faucibus
-                congue
-                nisl
-                et vehicula.
-                Morbi vel turpis quam. Praesent bibendum dignissim dui a facilisis. Vestibulum cursus rhoncus ultrices.
-                Praesent
-                aliquam ut massa non elementum. Praesent scelerisque sollicitudin turpis, vitae ultrices diam pretium
-                id.
-                Morbi
-                dictum nisl id euismod auctor. Praesent ac ante ut lectus ultricies aliquam. Maecenas vel nibh lacus.
-                Sed
-                tincidunt pellentesque orci, varius malesuada felis sodales ac. Cras rutrum, neque convallis tristique
-                tempor,
-                orci quam fringilla arcu, et laoreet velit ante sed tortor. Vestibulum faucibus augue quis tortor
-                ornare,
-                aliquet convallis neque fermentum. Quisque cursus in neque vitae imperdiet. Duis congue volutpat nisl,
-                at
-                condimentum justo malesuada eu.
-            </p>
-            <ol class="list">
-                <li>Here is a list</li>
-                <li>Another one</li>
-                <li>Third one in the list</li>
-
-            </ol>
-
-            <h4>How to turn off the TV</h4>
-            <p>
-                Tabitasse platea dictumst. Proin at pretium neque. Suspendisse malesuada orci sit amet convallis
-                porttitor.
-                Nulla non magna tristique, tristique eros tincidunt, sodales turpis. Nunc sed tempus tellus, blandit
-                posuere
-                turpis. Maecenas ut purus nec velit condimentum imperdiet. Nulla hendrerit odio ac magna ultrices
-                efficitur.
-                Donec vitae neque est. Nulla feugiat vehicula nulla nec pretium. Nulla facilisi.
-            </p>
-            <h3>How to build up a Website from scratch</h3>
-            <p>
-                Nunc sed tempus tellus, blandit posuere turpis. Maecenas ut purus nec velit condimentum imperdiet. Nulla
-                hendrerit odio ac magna ultrices efficitur. Donec vitae neque est. Nulla feugiat vehicula nulla nec
-                pretium.
-                Nulla facilisi.
-            </p>
-            <h4>Here is a list:</h4>
-
-            <ul class="list">
-                <li>Donec ut sem dui. Vivamus ut ipsum eget nisl tempor egestas. Nulla blandit sollicitudin quam in
-                    pulvinar. Nullam
-                    euismod gravida lectus ut lobortis. Vestibulum molestie magna nec enim consequat, sit amet lobortis
-                    odio
-                    ullamcorper. Pellentesque auctor hendrerit lorem, nec fermentum quam congue et. Curabitur faucibus
-                    congue nisl
-                    et vehicula.
-                </li>
-                <li>Donec ut sem dui. Vivamus ut ipsum eget nisl tempor egestas. Nulla blandit sollicitudin quam in
-                    pulvinar. Nullam
-                    euismod gravida lectus ut lobortis. Vestibulum molestie magna nec enim consequat, sit amet lobortis
-                    odio
-                    ullamcorper. Pellentesque auctor hendrerit lorem, nec fermentum quam congue et. Curabitur faucibus
-                    congue nisl
-                    et vehicula.
-                </li>
-                <li>Donec ut sem dui. Vivamus ut ipsum eget nisl tempor egestas. Nulla blandit sollicitudin quam in
-                    pulvinar. Nullam
-                    euismod gravida lectus ut lobortis. Vestibulum molestie magna nec enim consequat, sit amet lobortis
-                    odio
-                    ullamcorper. Pellentesque auctor hendrerit lorem, nec fermentum quam congue et. Curabitur faucibus
-                    congue nisl
-                    et vehicula.
-                </li>
-            </ul>
+                                </div>
+                            </div>
+                            <div class="row modal-block__subscribe">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <button type="button" class="btn btn-lg btn-primary btn-block" data-dismiss="modal">
+                                        Sign me up!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
         </article>
@@ -196,7 +134,7 @@
 
             <div class="related-main-block">
                 <div class="col-md-4">
-                    <div class="related-block--default">
+                    <div class="related-block">
                         <img src="https://placehold.it/720x250" class="img-responsive"/>
                         <div class="related-block__article-detail">
                             <a href="#">
@@ -211,7 +149,39 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="related-block--default">
+
+                    <div class="share-block text-center">
+                        <div class="share-block__label text-muted">Share</div>
+                        <div class="share-block__icons">
+                            <div class="share-block__upvote">
+                                <a href="#">
+                                    <i class="fa fa-angle-up remove-padding" aria-hidden="true"></i>
+                                    <i title="Show some love if you enjoyed this article"
+                                       class="fa fa-heart-o remove-padding"
+                                       aria-hidden="true"></i>
+                                    <div class="text-muted">24</div>
+                                </a>
+                            </div>
+                            <div>
+                                <a title="Share on Twitter" href="#">
+                                    <i class="fa fa-twitter fa-outline text-muted" aria-label="true"></i>
+                                </a>
+                                <div class="text-muted">10</div>
+                            </div>
+                            <div>
+                                <a title="Share on Facebook" href="#">
+                                    <i class="fa fa-facebook fa-outline text-muted" aria-hidden="true"></i>
+
+                                </a>
+                                <div class="text-muted">15</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="related-block">
                         <img src="https://placehold.it/720x250" class="img-responsive"/>
                         <div class="related-block__article-detail">
                             <a href="#">
@@ -226,7 +196,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="related-block--default">
+                    <div class="related-block">
                         <img src="https://placehold.it/720x250" class="img-responsive"/>
                         <div class="related-block__article-detail">
                             <a href="#">
@@ -241,36 +211,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="share-block text-center">
-            <div class="share-block__label text-muted">Share</div>
-            <div class="share-block__icons">
-                <div class="share-block__upvote">
-                    <a href="#">
-                        <i class="fa fa-angle-up remove-padding" aria-hidden="true"></i>
-                        <i title="Show some love if you enjoyed this article"
-                           class="fa fa-heart-o remove-padding"
-                           aria-hidden="true"></i>
-                        <div class="text-muted">24</div>
-                    </a>
-                </div>
-                <div>
-                    <a title="Share on Twitter" href="#">
-                        <i class="fa fa-twitter fa-outline text-muted" aria-label="true"></i>
-                    </a>
-                    <div class="text-muted">10</div>
-                </div>
-                <div>
-                    <a title="Share on Facebook" href="#">
-                        <i class="fa fa-facebook fa-outline text-muted" aria-hidden="true"></i>
-
-                    </a>
-                    <div class="text-muted">15</div>
-                </div>
-
-            </div>
-
         </div>
 
 

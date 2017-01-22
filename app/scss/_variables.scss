@@ -67,7 +67,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 
 //** By default, this inherits from the `<body>`.
 $headings-font-family:    inherit !default;
-$headings-font-weight:    'bold';
+$headings-font-weight:    bold;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
@@ -612,7 +612,7 @@ $modal-backdrop-bg:           #000 !default;
 //** Modal backdrop opacity
 $modal-backdrop-opacity:      .5 !default;
 //** Modal header border color
-$modal-header-border-color:   #e5e5e5 !default;
+$modal-header-border-color:   #fff;
 //** Modal footer border color
 $modal-footer-border-color:   $modal-header-border-color !default;
 

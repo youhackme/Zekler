@@ -22,9 +22,9 @@ var share = {
         return $(document).height();
     },
     contentWidth: function () {
-        return $(".container-small").width();
+        return $(".share-widget").width();
     }, contentHeight: function () {
-        return $(".container-small").height();
+        return $(".share-widget").height();
     },
     placement: function (browserWindow, containerWidth) {
         var sharePosition = ( browserWindow - containerWidth ) / 2 - this.config.offset;

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zekler theme</title>
+    <title>Zekler theme - Two columns</title>
     <link rel="stylesheet" href="build/css/style.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 </head>
@@ -32,8 +32,8 @@
     <hr>
 </header>
 
-<div class="container container-small share-widget">
-    <div class="content col-md-12">
+<div class="container share-widget">
+    <main class="content col-md-8 bigger-col-md-8">
         <div class="row meta-block">
             <div class="col-md-1">
                 <img src="build/img/hyder.jpeg" class="img-circle">
@@ -188,7 +188,81 @@
                 </div>
             </div>
         </footer>
-    </div>
+    </main>
+    <aside class="sidebar-block col-md-4 smaller-col-md-4">
+
+        <div class="sidebar-block__ads">
+            <img src="https://placehold.it/300x250" class="img-responsive"/>
+        </div>
+
+        <div class="sidebar-block__popular">
+            <h5>
+                <span class="label label-primary">MOST POPULAR</span>
+            </h5>
+            <div class="row">
+
+                <div class="col-md-12">
+                    <article class="related-block--sidebar">
+                        <img src="https://placehold.it/720x250" class="img-responsive"/>
+                        <div class="related-block__article-detail">
+                            <a href="#">
+                                <div class="related-block__title">
+                                    Another Post on Facebook
+                                </div>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="related-block--sidebar">
+                        <img src="https://placehold.it/720x250" class="img-responsive"/>
+                        <div class="related-block__article-detail">
+                            <a href="#">
+                                <div class="related-block__title">
+                                    Another Post on Facebook
+                                </div>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="related-block--sidebar">
+                        <img src="https://placehold.it/720x250" class="img-responsive"/>
+                        <div class="related-block__article-detail">
+                            <a href="#">
+                                <div class="related-block__title">
+                                    Another Post on Facebook
+                                </div>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="related-block--sidebar">
+                        <img src="https://placehold.it/720x250" class="img-responsive"/>
+                        <div class="related-block__article-detail">
+                            <a href="#">
+                                <div class="related-block__title">
+                                    Another Post on Facebook
+                                </div>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="related-block--sidebar">
+                        <img src="https://placehold.it/720x250" class="img-responsive"/>
+                        <div class="related-block__article-detail">
+                            <a href="#">
+                                <div class="related-block__title">
+                                    Another Post on Facebook
+                                </div>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </aside>
+
+
 </div>
 <div class="container-fluid darker-bg">
     <div class="container">
@@ -196,7 +270,7 @@
 
             <div class="related-main-block">
                 <div class="col-md-4">
-                    <div class="related-block--default">
+                    <article class="related-block--default">
                         <img src="https://placehold.it/720x250" class="img-responsive"/>
                         <div class="related-block__article-detail">
                             <a href="#">
@@ -208,10 +282,10 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-4">
-                    <div class="related-block--default">
+                    <article class="related-block--default">
                         <img src="https://placehold.it/720x250" class="img-responsive"/>
                         <div class="related-block__article-detail">
                             <a href="#">
@@ -223,10 +297,10 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-4">
-                    <div class="related-block--default">
+                    <article class="related-block--default">
                         <img src="https://placehold.it/720x250" class="img-responsive"/>
                         <div class="related-block__article-detail">
                             <a href="#">
@@ -238,10 +312,11 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
+
 
         <div class="share-block text-center">
             <div class="share-block__label text-muted">Share</div>
@@ -272,7 +347,6 @@
             </div>
 
         </div>
-
 
         <div class="row">
             <div class="comments-block">
@@ -434,7 +508,7 @@
 
 <script>
     $(function () {
-        share.init();
+        share.init({offset: 50});
         search.init();
     })
 </script>
