@@ -68,6 +68,8 @@ $bootstrap-sass-path: '../../node_modules/bootstrap-sass/assets/stylesheets/boot
 @import 'partials/response';
 @import 'partials/modal';
 @import 'partials/sidebar';
+@import 'partials/button';
+
 // Customize container
 @media (min-width: 768px) {
   .container-small {
@@ -96,8 +98,8 @@ $bootstrap-sass-path: '../../node_modules/bootstrap-sass/assets/stylesheets/boot
     width: 30%;
   }
 
-  .remote-3-percent{
-    width:97%;
+  .remote-3-percent {
+    width: 97%;
   }
 }
 
@@ -165,6 +167,9 @@ article.article-block {
     &::selection {
       background: #ffb7b7;
     }
+  }
+  b, strong {
+    font-weight: 600;
   }
 
   figure {
@@ -264,7 +269,7 @@ div.comments-block {
     font-style: normal;
     font-weight: 700;
     color: #000000;
-    font-size: 17px;
+    font-size: 16px;
     margin-top: 5px;
   }
 }
