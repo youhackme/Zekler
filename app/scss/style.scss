@@ -57,8 +57,8 @@ $bootstrap-sass-path: '../../node_modules/bootstrap-sass/assets/stylesheets/boot
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/theme";
 
 // Custom components from minimalism theme
-@import 'partials/fontproximanova';
-@import 'partials/fontdiarapro';
+@import 'partials/fontZeklerPN';
+@import 'partials/fontZeklerDP';
 @import 'partials/tag';
 @import 'partials/social';
 @import 'partials/share';
@@ -68,6 +68,8 @@ $bootstrap-sass-path: '../../node_modules/bootstrap-sass/assets/stylesheets/boot
 @import 'partials/response';
 @import 'partials/modal';
 @import 'partials/sidebar';
+@import 'partials/button';
+
 // Customize container
 @media (min-width: 768px) {
   .container-small {
@@ -94,6 +96,10 @@ $bootstrap-sass-path: '../../node_modules/bootstrap-sass/assets/stylesheets/boot
 
   .smaller-col-md-4 {
     width: 30%;
+  }
+
+  .remote-3-percent {
+    width: 97%;
   }
 }
 
@@ -127,7 +133,7 @@ a {
 //Blog post page
 
 article.article-block {
-  font-family: "DiariaPro", Helvetica, Arial, sans-serif;
+  font-family: "ZeklerDP", Helvetica, Arial, sans-serif;
   font-size: 19px;
   font-weight: 300;
   font-style: normal;
@@ -135,7 +141,7 @@ article.article-block {
 }
 
 .meta-block {
-  font-family: "ProximaNova", Helvetica, Arial, sans-serif;
+  font-family: "ZeklerPN", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 14px;
@@ -155,12 +161,15 @@ article.article-block {
 
 article.article-block {
   p {
-    font-family: "DiariaPro", Helvetica, Arial, sans-serif;
+    font-family: "ZeklerDP", Helvetica, Arial, sans-serif;
     font-weight: 100;
     line-height: 33px;
     &::selection {
       background: #ffb7b7;
     }
+  }
+  b, strong {
+    font-weight: 600;
   }
 
   figure {
@@ -172,7 +181,7 @@ article.article-block {
   }
   figure figcaption {
     text-align: center;
-    font-family: "ProximaNova", Helvetica, Arial, sans-serif;
+    font-family: "ZeklerPN", Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 100;
@@ -229,7 +238,7 @@ article.article-block {
 }
 
 div.comments-block {
-  margin: 40px 0;
+  margin: 80px 0;
 }
 
 .related-block {
@@ -256,11 +265,11 @@ div.comments-block {
   }
 
   &__title {
-    font-family: 'ProximaNova';
+    font-family: 'ZeklerPN';
     font-style: normal;
     font-weight: 700;
     color: #000000;
-    font-size: 17px;
+    font-size: 16px;
     margin-top: 5px;
   }
 }
@@ -272,7 +281,7 @@ div.comments-block > div {
 .biography-block {
   span {
     margin-left: 5px;
-    font-family: 'ProximaNova';
+    font-family: 'ZeklerPN';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;

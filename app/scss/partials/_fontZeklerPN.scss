@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'zeklerPN';
+  src: local('zeklerPN-thin'),
+  url('../fonts/zeklerPNt-thin-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zeklerPNt-thin-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/zeklerPNt-thin-webfont.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/zeklerPNt-thin-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/zeklerPNt-thin-webfont.svg') format('svg'); /* LegaczeklerPNcond-light-webfont*/
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'zeklerPN';
+  src: local('zeklerPN-Light'),
+  url('../fonts/zeklerPN-light-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zeklerPN-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/zeklerPN-light-webfont.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/zeklerPN-light-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/zeklerPN-light-webfont.svg') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'zeklerPN';
+  src: local('zeklerPN-Regular'),
+  url('../fonts/zeklerPN-Regular-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zeklerPN-Regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/zeklerPN-Regular-webfont.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/zeklerPN-Regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/zeklerPN-Regular-webfont.svg') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'zeklerPN';
+  src: local('zeklerPN-Regularitalic'),
+  url('../fonts/zeklerPN-Regularitalic-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zeklerPN-Regularitalic-webfont.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/zeklerPN-Regularitalic-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/zeklerPN-Regularitalic-webfont.svg') format('svg'); /* Legacy iOS */
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'zeklerPN';
+  src: local('zeklerPN-semibold'),
+  url('../fonts/zeklerPN-semibold-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zeklerPN-semibold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/zeklerPN-semibold-webfont.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/zeklerPN-semibold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/zeklerPN-semibold-webfont.svg') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'zeklerPN';
+  src: local('zeklerPN-Bold'),
+  url('../fonts/zeklerPN-bold-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zeklerPN-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/zeklerPN-bold-webfont.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/zeklerPN-bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/zeklerPN-bold-webfont.svg') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'zeklerPN';
+  src: local('zeklerPN-ExtraBold'),
+  url('../fonts/zeklerPN-extrabld-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zeklerPN-extrabld-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/zeklerPN-extrabld-webfont.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/zeklerPN-extrabld-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/zeklerPN-extrabld-webfont.svg') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'zeklerPN';
+  src: local('zeklerPN-Black'),
+  url('../fonts/zeklerPN-black-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zeklerPN-black-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/zeklerPN-black-webfont.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/zeklerPN-black-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/zeklerPN-black-webfont.svg') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'proxima-nova-sc-osf-condensed';
+  src: local('zeklerPN-condensed-light'),
+  url('../fonts/zeklerPNcond-light-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zeklerPNcond-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/zeklerPNcond-light-webfont.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/zeklerPNcond-light-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/zeklerPNcond-light-webfont.svg') format('svg'); /* LegaczeklerPNcond-light-webfont*/
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'proxima-nova-sc-osf-condensed';
+  src: local('zeklerPN-condensed-regular'),
+  url('../fonts/zeklerPNcond-regular-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zeklerPNcond-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/zeklerPNcond-regular-webfont.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/zeklerPNcond-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/zeklerPNcond-regular-webfont.svg') format('svg'); /* LegaczeklerPNcond-light-webfont*/
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'proxima-nova-sc-osf-condensed';
+  src: local('zeklerPN-condensed-regularit'),
+  url('../fonts/zeklerPNcond-regularit-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zeklerPNcond-regularit-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/zeklerPNcond-regularit-webfont.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/zeklerPNcond-regularit-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/zeklerPNcond-regularit-webfont.svg') format('svg'); /* LegaczeklerPNcond-light-webfont*/
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'proxima-nova-sc-osf-condensed';
+  src: local('zeklerPN-condensed-semibold'),
+  url('../fonts/zeklerPNcond-semibold-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zeklerPNcond-semibold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/zeklerPNcond-semibold-webfont.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/zeklerPNcond-semibold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/zeklerPNcond-semibold-webfont.svg') format('svg'); /* LegaczeklerPNcond-light-webfont*/
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'proxima-nova-sc-osf-condensed';
+  src: local('zeklerPN-condensed-thin'),
+  url('../fonts/zeklerPNcond-thin-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zeklerPNcond-thin-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/zeklerPNcond-thin-webfont.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/zeklerPNcond-thin-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/zeklerPNcond-thin-webfont.svg') format('svg'); /* LegaczeklerPNcond-light-webfont*/
+  font-style: normal;
+  font-weight: 100;
+
+}
