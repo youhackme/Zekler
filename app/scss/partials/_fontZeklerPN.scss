@@ -24,24 +24,23 @@
 
 @font-face {
   font-family: 'zeklerPN';
-  src: local('zeklerPN-regular'),
-  url('../fonts/zeklerPN-regular-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/zeklerPN-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/zeklerPN-regular-webfont.woff') format('woff'), /* Modern Browsers */
-  url('../fonts/zeklerPN-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/zeklerPN-regular-webfont.svg') format('svg'); /* Legacy iOS */
+  src: local('zeklerPN-Regular'),
+  url('../fonts/zeklerPN-Regular-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zeklerPN-Regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/zeklerPN-Regular-webfont.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/zeklerPN-Regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/zeklerPN-Regular-webfont.svg') format('svg'); /* Legacy iOS */
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'zeklerPN';
-  src: local('zeklerPN-regularitalic'),
-  url('../fonts/zeklerPN-regularitalic-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
-
-  url('../fonts/zeklerPN-regularitalic-webfont.woff') format('woff'), /* Modern Browsers */
-  url('../fonts/zeklerPN-regularitalic-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/zeklerPN-regularitalic-webfont.svg') format('svg'); /* Legacy iOS */
+  src: local('zeklerPN-Regularitalic'),
+  url('../fonts/zeklerPN-Regularitalic-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zeklerPN-Regularitalic-webfont.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/zeklerPN-Regularitalic-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/zeklerPN-Regularitalic-webfont.svg') format('svg'); /* Legacy iOS */
   font-style: italic;
   font-weight: 400;
 }
