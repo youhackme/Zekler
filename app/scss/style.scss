@@ -70,6 +70,9 @@ $bootstrap-sass-path: '../../node_modules/bootstrap-sass/assets/stylesheets/boot
 @import 'partials/sidebar';
 @import 'partials/button';
 
+body {
+  margin-bottom: 100px;
+}
 // Customize container
 @media (min-width: 768px) {
   .container-small {
