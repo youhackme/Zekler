@@ -293,7 +293,16 @@ div.comments-block > div {
   margin-bottom: 20px;
 }
 
+pre {
+  border: none;
+  border-radius: 0;
+  text-align: left;
+}
+
+pre code {
+  font-size: 16px;
 
 
+}
 
 
