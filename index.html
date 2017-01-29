@@ -4,21 +4,38 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Darktips.com minimalist theme</title>
+    <title>Zekler minimalist theme</title>
     <link rel="stylesheet" href="build/css/style.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
 
-<header class="container">
+
+
+<header class="container-fluid navigation-block">
     <div class="row">
-        <div class="logo col-md-2">
+        <div class="logo-block col-md-2 col-md-offset-1">
             <a href="https://darktips.com">
-                <img class="img-responsive" src="app/img/logo.png" alt="darktips.com logo">
+                <img class="img-responsive" src="build/img/logo.png" alt="darktips.com logo">
             </a>
         </div>
+        <div class="col-md-9">
+            <div class="search-block pull-right">
+                <form method="post">
+                    <label for="search">
+                        <span class="fa fa-search" aria-hidden="true"> </span>
+                    </label>
+                    <input id="search" name="search" placeholder="Search.." autocomplete="off">
+                </form>
+
+            </div>
+        </div>
     </div>
+    <hr>
 </header>
+
+
 <div class="container content">
     <div class="intro-block">
         <h1 class="text-center">Explore our latest tips & tricks</h1>
@@ -30,7 +47,7 @@
         <div class="row articles-block">
             <section class="col-md-4 articles-block__tip">
                 <article>
-                    <a href="#"><img class="img-responsive" alt="photo" src="app/img/1.jpg"></a>
+                    <a href="#"><img class="img-responsive" alt="photo" src="build/img/1.jpg"></a>
                     <h4><a href="#">How to take a screenshot on Windows 10</a>
                         <small><a href="#" class="tag--windows">Windows</a></small>
                     </h4>
@@ -38,10 +55,10 @@
                 <footer class="meta">
 
                     <div class="articles-block__totallove">
-                        <span class="glyphicon glyphicon-heart-empty"></span>15
+                        <span class="fa fa-heart-o" aria-hidden="true" ></span>15
                     </div>
                     <div class="articles-block__totalcomments">
-                        <span class="glyphicon glyphicon-comment"></span>10
+                        <span class="fa fa-comment-o" aria-hidden="true"></span>10
                     </div>
 
 
@@ -52,7 +69,7 @@
             </section>
             <section class="col-md-4 articles-block__tip">
                 <article>
-                    <a href="#"><img class="img-responsive" src="app/img/2.jpg" alt="photo"></a>
+                    <a href="#"><img class="img-responsive" src="build/img/2.jpg" alt="photo"></a>
                     <h4><a href="#">CC vs BCC: Learn the difference when sending an email</a>
                         <small><a href="#" class="tag--facebook">Email</a></small>
                     </h4>
@@ -60,10 +77,10 @@
                 <footer class="meta">
 
                     <div class="articles-block__totallove">
-                        <span class="glyphicon glyphicon-heart-empty"></span>15
+                        <span class="fa fa-heart-o" aria-hidden="true" ></span>15
                     </div>
                     <div class="articles-block__totalcomments">
-                        <span class="glyphicon glyphicon-comment"></span>10
+                        <span class="fa fa-comment-o" aria-hidden="true"></span>10
                     </div>
 
 
@@ -74,18 +91,18 @@
             </section>
             <section class="col-md-4 articles-block__tip">
                 <article>
-                    <a href="#"><img class="img-responsive" alt="photo" src="app/img/3.jpg"></a>
+                    <a href="#"><img class="img-responsive" alt="photo" src="build/img/3.jpg"></a>
                     <h4><a href="#">How to delete friends on Facebook in Bulk </a>
                         <small><a href="#" class="tag--other">Facebook</a></small>
                     </h4>
                 </article>
                 <footer class="meta">
                     <div class="articles-block__totallove">
-                        <span class="glyphicon glyphicon-heart-empty"></span>15
+                        <span class="fa fa-heart-o" aria-hidden="true" ></span>15
                     </div>
 
                     <div class="articles-block__totalcomments">
-                        <span class="glyphicon glyphicon-comment"></span>10
+                        <span class="fa fa-comment-o" aria-hidden="true"></span>10
                     </div>
 
                     <div class="articles-block__author">
@@ -98,7 +115,7 @@
         <div class="row articles-block">
             <section class="col-md-4 articles-block__tip">
                 <article>
-                    <a href="#"><img class="img-responsive" alt="photo" src="app/img/1.jpg"></a>
+                    <a href="#"><img class="img-responsive" alt="photo" src="build/img/1.jpg"></a>
                     <h4><a href="#">How to take a screenshot on Windows 10</a>
                         <small><a href="#" class="tag--windows">Windows</a></small>
                     </h4>
@@ -106,10 +123,10 @@
                 <footer class="meta">
 
                     <div class="articles-block__totallove">
-                        <span class="glyphicon glyphicon-heart-empty"></span>15
+                        <span class="fa fa-heart-o" aria-hidden="true" ></span>15
                     </div>
                     <div class="articles-block__totalcomments">
-                        <span class="glyphicon glyphicon-comment"></span>10
+                        <span class="fa fa-comment-o" aria-hidden="true"></span>10
                     </div>
 
 
@@ -120,7 +137,7 @@
             </section>
             <section class="col-md-4 articles-block__tip">
                 <article>
-                    <a href="#"><img class="img-responsive" alt="photo" src="app/img/2.jpg"></a>
+                    <a href="#"><img class="img-responsive" alt="photo" src="build/img/2.jpg"></a>
                     <h4><a href="#">CC vs BCC: Learn the difference when sending an email</a>
                         <small><a href="#" class="tag--facebook">Email</a></small>
                     </h4>
@@ -128,10 +145,10 @@
                 <footer class="meta">
 
                     <div class="articles-block__totallove">
-                        <span class="glyphicon glyphicon-heart-empty"></span>15
+                        <span class="fa fa-heart-o" aria-hidden="true" ></span>15
                     </div>
                     <div class="articles-block__totalcomments">
-                        <span class="glyphicon glyphicon-comment"></span>10
+                        <span class="fa fa-comment-o" aria-hidden="true"></span>10
                     </div>
 
 
@@ -142,18 +159,18 @@
             </section>
             <section class="col-md-4 articles-block__tip">
                 <article>
-                    <a href="#"><img class="img-responsive"  alt="photo" src="app/img/3.jpg"></a>
+                    <a href="#"><img class="img-responsive" alt="photo" src="build/img/3.jpg"></a>
                     <h4><a href="#">How to delete friends on Facebook in Bulk </a>
                         <small><a href="#" class="tag--other">Facebook</a></small>
                     </h4>
                 </article>
                 <footer class="meta">
                     <div class="articles-block__totallove">
-                        <span class="glyphicon glyphicon-heart-empty"></span>15
+                        <span class="fa fa-heart-o" aria-hidden="true" ></span>15
                     </div>
 
                     <div class="articles-block__totalcomments">
-                        <span class="glyphicon glyphicon-comment"></span>10
+                        <span class="fa fa-comment-o" aria-hidden="true"></span>10
                     </div>
 
                     <div class="articles-block__author">
@@ -166,7 +183,7 @@
         <div class="row articles-block">
             <section class="col-md-4 articles-block__tip">
                 <article>
-                    <a href="#"><img class="img-responsive" alt="photo" src="app/img/1.jpg"></a>
+                    <a href="#"><img class="img-responsive" alt="photo" src="build/img/1.jpg"></a>
                     <h4><a href="#">How to take a screenshot on Windows 10</a>
                         <small><a href="#" class="tag--windows">Windows</a></small>
                     </h4>
@@ -174,10 +191,10 @@
                 <footer class="meta">
 
                     <div class="articles-block__totallove">
-                        <span class="glyphicon glyphicon-heart-empty"></span>15
+                        <span class="fa fa-heart-o" aria-hidden="true" ></span>15
                     </div>
                     <div class="articles-block__totalcomments">
-                        <span class="glyphicon glyphicon-comment"></span>10
+                        <span class="fa fa-comment-o" aria-hidden="true"></span>10
                     </div>
 
 
@@ -188,7 +205,7 @@
             </section>
             <section class="col-md-4 articles-block__tip">
                 <article>
-                    <a href="#"><img class="img-responsive" alt="photo" src="app/img/2.jpg"></a>
+                    <a href="#"><img class="img-responsive" alt="photo" src="build/img/2.jpg"></a>
                     <h4><a href="#">CC vs BCC: Learn the difference when sending an email</a>
                         <small><a href="#" class="tag--facebook">Email</a></small>
                     </h4>
@@ -196,10 +213,10 @@
                 <footer class="meta">
 
                     <div class="articles-block__totallove">
-                        <span class="glyphicon glyphicon-heart-empty"></span>15
+                        <span class="fa fa-heart-o" aria-hidden="true" ></span>15
                     </div>
                     <div class="articles-block__totalcomments">
-                        <span class="glyphicon glyphicon-comment"></span>10
+                        <span class="fa fa-comment-o" aria-hidden="true"></span>10
                     </div>
 
 
@@ -210,18 +227,18 @@
             </section>
             <section class="col-md-4 articles-block__tip">
                 <article>
-                    <a href="#"><img class="img-responsive" alt="photo" src="app/img/3.jpg"></a>
+                    <a href="#"><img class="img-responsive" alt="photo" src="build/img/3.jpg"></a>
                     <h4><a href="#">How to delete friends on Facebook in Bulk </a>
                         <small><a href="#" class="tag--other">Facebook</a></small>
                     </h4>
                 </article>
                 <footer class="meta">
                     <div class="articles-block__totallove">
-                        <span class="glyphicon glyphicon-heart-empty"></span>15
+                        <span class="fa fa-heart-o" aria-hidden="true" ></span>15
                     </div>
 
                     <div class="articles-block__totalcomments">
-                        <span class="glyphicon glyphicon-comment"></span>10
+                        <span class="fa fa-comment-o" aria-hidden="true"></span>10
                     </div>
 
                     <div class="articles-block__author">
@@ -253,7 +270,13 @@
         </ul>
     </div>
 </footer>
-
+<script src="build/js/all.js"></script>
+<script>
+    $(function () {
+        share.init();
+        search.init();
+    })
+</script>
 
 </body>
 </html>
