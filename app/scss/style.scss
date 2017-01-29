@@ -9,7 +9,7 @@ $bootstrap-sass-path: '../../node_modules/bootstrap-sass/assets/stylesheets/boot
 // Reset and dependencies
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/print";
-@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
 
 // Core CSS
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
@@ -69,6 +69,7 @@ $bootstrap-sass-path: '../../node_modules/bootstrap-sass/assets/stylesheets/boot
 @import 'partials/modal';
 @import 'partials/sidebar';
 @import 'partials/button';
+@import 'partials/icons';
 
 // Customize container
 @media (min-width: 768px) {
