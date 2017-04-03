@@ -6,23 +6,23 @@
 }
 
 .btn-primary.btn-outline {
-  color: #428bca;
+  color: $brand-primary;
 }
 
 .btn-success.btn-outline {
-  color: #5cb85c;
+  color: $brand-success;
 }
 
 .btn-info.btn-outline {
-  color: #5bc0de;
+  color: $brand-info;
 }
 
 .btn-warning.btn-outline {
-  color: #f0ad4e;
+  color: $brand-warning;
 }
 
 .btn-danger.btn-outline {
-  color: #d9534f;
+  color: $brand-danger;
 }
 
 .btn-primary.btn-outline:hover, .btn-success.btn-outline:hover, .btn-info.btn-outline:hover, .btn-warning.btn-outline:hover, .btn-danger.btn-outline:hover {

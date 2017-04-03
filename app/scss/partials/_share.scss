@@ -23,7 +23,7 @@
     padding-top: 5px;
     font-size: 22px;
 
-    &.fa-outline {
+    &.icon-outline {
       color: #fff;
       text-shadow: -1px -1px 0 $gray-light,
       1px -1px 0 $gray-light,
@@ -31,15 +31,16 @@
       1px 1px 0 $gray-light;
     }
 
-    &.fa-heart-o, &.fa-heart, &.fa-angle-up {
+    &.icon-heart-o, &.icon-heart, &.icon-angle-up {
       color: $gray-light;
     }
-    &.fa-angle-up {
+    &.icon-angle-up {
       display: block;
     }
 
     &.remove-padding {
       padding: 0 !important;
+      line-height:0;
     }
 
 
