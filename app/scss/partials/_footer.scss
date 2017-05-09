@@ -1,6 +1,9 @@
 footer.footer-block {
-
+  position: absolute;
+  width: 100%;
+  background-color: #f5f5f5;
   background: #2E3234;
+  /* Set the fixed height of the footer here */
   height: 100px;
 
   & p {

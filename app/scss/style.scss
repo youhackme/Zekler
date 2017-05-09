@@ -71,6 +71,9 @@ $bootstrap-sass-path: '../../node_modules/bootstrap-sass/assets/stylesheets/boot
 @import 'partials/button';
 @import 'partials/icons';
 
+body {
+  margin-bottom: 100px;
+}
 // Customize container
 @media (min-width: 768px) {
   .container-small {
